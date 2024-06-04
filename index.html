@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= "width=device-width, 
+									initial-scale=1.0"> 
+	<title>CGPA Calculator</title> 
+	<link rel="stylesheet" href="style.css"> 
+</head> 
+
+<body> 
+	<div id="calculator"> 
+		<span id="creditError" class="error"></span> 
+		<span id="inputError" class="error"></span> 
+		<br> 
+		<h2>CGPA Calculator</h2> 
+		<form id="cgpaForm"> 
+
+			<label for="subject">Subject:</label> 
+			<input type="text" id="subject" required> 
+
+			<label for="grade">Grade:</label> 
+			<select id="grade"> 
+				<option value="S">S</option> 
+				<option value="A">A</option> 
+				<option value="B">B</option> 
+				<option value="C">C</option> 
+				<option value="D">D</option> 
+				<option value="F">F</option> 
+			</select> 
+
+			<label for="credit">Credit:</label> 
+			<input type="number" id="credit" min="1" required> 
+
+			<button type="button" onclick="addSubject()"> 
+				Add Subject 
+			</button> 
+		</form> 
+		<h3>Calculate CGPA</h3> 
+		<table id="subjectTable"> 
+			<thead> 
+				<tr> 
+					<th>Subject</th> 
+					<th>Grade</th> 
+					<th>Credit</th> 
+					<th>Action</th> 
+				</tr> 
+			</thead> 
+			<tbody id="subjectList"></tbody> 
+		</table> 
+
+		<h3>CGPA: <span id="cgpa">0.00</span></h3> 
+
+		<button type="button" onclick="calculateCGPA()"> 
+			Calculate CGPA 
+		</button> 
+		<button type="reset" onclick="resetForm()"> 
+			Reset 
+		</button> 
+	</div> 
+	<script src="script.js"></script> 
+
+</body> 
+
+</html>
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Columns with icons</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  </div>
